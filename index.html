@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<body>
+    <center style="position: relative;">
+       <table border="4" >
+           <thead >
+              <tr >
+                  <th> Employee name </th>
+                  <td><input type="text" name="ename" id="ename" required>
+                    <p id="alert1" style="color: red;position: absolute; top: -7px;left: 66%;"></p>
+                </td>
+              </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <th> Employee ID </th>
+                <td><input type="text" name="idname" id="idname" required>
+                    <p id="alert2" style="color: red;position: absolute; top: 20px; left: 66%;"></p>
+                </td>
+            </tr>
+            <tr>
+                <th> Salary </th>
+                <td><input type="text" name="salary" id="salary" required></td>
+            </tr>
+            <tr>
+                <th> Experience in years </th>
+                <td><input type="text" name="exp" id="exp" required></td>
+            </tr>
+            <tr id="btn">
+                <td >
+                    <input type="button" name="button" id="btn" value="Add" onclick="AddRow()">
+                </td>
+                <td >
+                    <input type="button" name="button" id="btn" value=" 0 - 2yrs" onclick="twoYrs()">
+                </td>
+            </tr>
+            <tr id="btn">
+                <td >
+                    <input type="button" name="button" id="btn" value=" 2 - 3yrs" onclick="threeyrs()">
+                </td>
+                <td >
+                    <input type="button" name="button" id="btn" value=" 3yrs & above" onclick="abovethree()">
+                </td>
+            </tr>
+           </tbody>
+       </table>
+       <table border="4" id="show">
+           <thead>
+               <tr>
+                  <th> Employee name</th>
+                  <th> Employee ID</th>
+                  <th> Salary </th>
+                  <th> Experience </th>
+                  <th> Excepted salary </th>
+               </tr>
+           </thead>
+       </table>
+       <table border="4" id="shows">
+        <thead>
+            <tr>
+               <th> Employee name</th>
+               <th> Employee ID</th>
+               <th> Salary </th>
+               <th> Experience </th>
+               <th> Excepted salary </th>
+            </tr>
+        </thead>
+       </table>
+    </center>
+</body>
+</html>
